@@ -60,6 +60,6 @@ ADD THE VIDEO HERE (SLIGHTLY TOO BIG)
 
 **Thanks and credits for the ROS2 port of the Cartesian Impedance Controller and many control-related clients and functionalities**: Ossi Parikka [(@Ozzyuni)](https://github.com/ozzyuni)
 
-**The Cartesian Impedance controller was originally implemented (in ROS1) by Matthias Mayr, see: https://github.com/matthias-mayr/Cartesian-Impedance-Controller/tree/master
+**The Cartesian Impedance controller was originally implemented (in ROS1) by Matthias Mayr, see: https://github.com/matthias-mayr/Cartesian-Impedance-Controller/tree/master**
 
 
