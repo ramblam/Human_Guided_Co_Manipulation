@@ -1,0 +1,8 @@
+geometry_msgs/Pose[] poses
+float64 velocity
+float64 timeout_ms
+---
+bool success
+---
+float64 ms_waited_until_now
+string state

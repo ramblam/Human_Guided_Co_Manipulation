@@ -1,0 +1,5 @@
+string tts_command
+---
+bool success
+---
+string state

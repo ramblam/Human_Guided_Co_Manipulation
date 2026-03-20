@@ -1,0 +1,19 @@
+# Goal
+geometry_msgs/PoseStamped target_pose  # Desired pose to move to.
+std_msgs/Float64 max_velocity_scaling_factor  # Scaling factor for limiting maximum velocity.
+std_msgs/Float64 max_acceleration_scaling_factor  # Scaling factor for limiting maximum acceleration.
+builtin_interfaces/Duration planning_time  # Time allowed for planning the trajectory.
+float64 goal_tolerance  # Tolerance within which the pose is considered achieved.
+string planner_id  # Identifier for the planner to use.
+string planning_frame  # Reference frame for planning.
+---
+# Result
+bool success  # Indicates whether the movement was successful.
+std_msgs/String message  # Message with details of the result or any errors.
+builtin_interfaces/Duration total_time  # Total time taken for the action.
+geometry_msgs/PoseStamped final_pose  # Final pose after action completion.
+---
+# Feedback
+geometry_msgs/PoseStamped current_pose  # Current pose of the robot.
+std_msgs/Float64 progress_percentage  # Progress made in reaching the target (0-100%).
+builtin_interfaces/Duration time_passed  # Duration since the action started.

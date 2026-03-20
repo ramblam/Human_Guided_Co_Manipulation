@@ -1,0 +1,19 @@
+# Goal
+sensor_msgs/JointState target_joint_state  # Desired joint positions and velocities.
+std_msgs/Float64 max_velocity_scaling_factor  # Scaling factor for limiting maximum velocity.
+std_msgs/Float64 max_acceleration_scaling_factor  # Scaling factor for limiting maximum acceleration.
+builtin_interfaces/Duration planning_time  # Time allowed for planning the trajectory.
+float64 goal_tolerance  # Tolerance within which the joint positions are considered achieved.
+string planner_id  # Identifier for the planner to use.
+string planning_frame  # Reference frame for planning.
+---
+# Result
+bool success  # Indicates whether the movement was successful.
+std_msgs/String message  # Message with details of the result or any errors.
+builtin_interfaces/Duration total_time  # Total time taken for the action.
+sensor_msgs/JointState final_joint_state  # Final joint state after action completion.
+---
+# Feedback
+sensor_msgs/JointState current_joint_state  # Current state of the joints.
+std_msgs/Float64 progress_percentage  # Progress made in reaching the target (0-100%).
+builtin_interfaces/Duration time_passed  # Duration since the action started.

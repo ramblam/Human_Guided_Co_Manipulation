@@ -1,0 +1,11 @@
+# Goal
+geometry_msgs/Pose pose
+float64 velocity
+float64 timeout_ms
+---
+# Result
+bool success
+---
+# Feedback
+float64 ms_waited_until_now
+string state

@@ -1,0 +1,20 @@
+# Goal
+geometry_msgs/PoseStamped[] waypoints  # List of waypoints to follow
+std_msgs/Float64 max_velocity_scaling_factor  # Scaling factor for limiting maximum velocity.
+std_msgs/Float64 max_acceleration_scaling_factor  # Scaling factor for limiting maximum acceleration.
+builtin_interfaces/Duration planning_time  # Time allowed for planning the trajectory.
+float64 goal_tolerance  # Tolerance within which the path is considered achieved.
+string planner_id  # Identifier for the planner to use.
+string planning_frame  # Reference frame for planning.
+---
+# Result
+bool success  # Indicates whether the action was successful.
+std_msgs/String message  # Message detailing the result or any errors.
+builtin_interfaces/Duration total_time  # Total time taken to complete the action.
+geometry_msgs/PoseStamped final_pose  # Final position after completing the path.
+std_msgs/Float64 progress_percentage  # Final progress percentage.
+---
+# Feedback
+geometry_msgs/PoseStamped current_pose  # Current position of the robot on the path.
+std_msgs/Float64 progress_percentage  # Progress made in completing the path (0-100%).
+builtin_interfaces/Duration time_passed  # Duration since the action started.
