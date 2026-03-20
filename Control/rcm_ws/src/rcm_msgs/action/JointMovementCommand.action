@@ -1,0 +1,9 @@
+float64[] joint_positions
+float64 velocity
+float64 acceleration
+float64 timeout_ms
+---
+bool success
+---
+float64 ms_waited_until_now
+string state

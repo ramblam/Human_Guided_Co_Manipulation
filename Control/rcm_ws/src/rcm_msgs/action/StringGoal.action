@@ -1,0 +1,12 @@
+# Goal
+string goal_string
+string goal_parameters_serialized_json
+---
+# Result
+bool success
+string result_message
+string result_data_serialized_json
+---
+# Feedback
+string status_message
+float64 progress_percentage

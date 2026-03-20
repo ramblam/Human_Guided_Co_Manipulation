@@ -1,0 +1,10 @@
+<library path="cartesian_impedance_controller_manager">
+  <class 
+    name="rcm_manager_cic_plugins/CartesianImpedanceControllerManager"
+    type="rcm_manager_cic_plugins::CartesianImpedanceControllerManager"
+    base_class_type="rcm_manager::ManagerBase">
+    <description>
+    This is an example plugin for testing without a functioning manager.
+    </description>
+  </class>
+</library>
