@@ -1,0 +1,10 @@
+<library path="franka_hand">
+  <class type="rcm_gripper_franka_plugins::FrankaHand" base_class_type="rcm_gripper::BasicGripper">
+    <description>Interfaces with the franka_ros2 action interface to control a Franka Hand gripper.</description>
+  </class>
+</library>
+<library path="franka_end_effector">
+  <class type="rcm_gripper_franka_plugins::FrankaEndEffector" base_class_type="rcm_gripper::GenericEndEffector">
+    <description>Interfaces with the franka_ros2 action interface to control a Franka Hand gripper.</description>
+  </class>
+</library>

@@ -1,0 +1,251 @@
+rcm_controllers:
+  joints: {
+    type: string_array,
+    default_value: [],
+    description: "Joint names to control and listen to",
+    read_only: true,
+    validation: {
+      unique<>: null,
+    }
+  }
+  command_joints: {
+    type: string_array,
+    default_value: [],
+    description: "Joint names to control. This parameters is used if JTC is used in a controller chain where command and state interfaces don't have same names.",
+    read_only: true,
+    validation: {
+      unique<>: null,
+    }
+  }
+  command_interfaces: {
+    type: string_array,
+    default_value: [],
+    description: "Command interfaces provided by the hardware interface for all joints",
+    read_only: true,
+    validation: {
+      unique<>: null,
+      subset_of<>: [["position", "velocity", "acceleration", "effort",]]
+    }
+  }
+  state_interfaces: {
+    type: string_array,
+    default_value: [],
+    description: "State interfaces provided by the hardware for all joints.",
+    read_only: true,
+    validation: {
+      unique<>: null,
+      subset_of<>: [["position", "velocity", "acceleration", "effort"]]
+    }
+  }
+  action_monitor_rate: {
+    type: double,
+    default_value: 20.0,
+    description: "Rate to monitor status changes when the controller is executing action (control_msgs::action::FollowJointTrajectory)",
+    read_only: true,
+    validation: {
+      gt_eq: [0.1]
+    }
+  }
+  robot_description: {
+    type: string,
+    default_value: "",
+    description: "Robot description"
+  }
+  end_effector: {
+    type: string,
+    default_value: "" ,
+    description: "Name of the robot end-effector"
+  }
+  wrench_ee_frame: {
+    type: string,
+    default_value: "" ,
+    description: "The name of the frame in which wrench commands are applied"
+  }
+  enable_trajectories: {
+    type: bool,
+    default_value: true,
+    description: "Enable trajectory action server for e.g. MoveIt"
+  }
+  delta_tau_max: {
+    type: double,
+    default_value: 1.0,
+    description: "Maximum torque delta between updates"
+  }
+  update_frequency: {
+    type: double,
+    default_value: 1000.0,
+    description: "Controller update rate"
+  }
+  filtering:
+    nullspace_config: {
+        type: double,
+        default_value: 1.0,
+        description: "Nullspace configuration filtering"
+    }
+    pose: {
+        type: double,
+        default_value: 1.0,
+        description: "Reference pose filtering"
+    }
+    stiffness: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian and nullspace stiffness"
+    }
+    wrench: {
+        type: double,
+        default_value: 1.0,
+        description: "Commanded torque"
+    }
+  verbosity:
+    print: {
+        type: bool,
+        default_value: false,
+        description: "Verbose logging"
+    }
+    state_msgs: {
+        type: bool,
+        default_value: false,
+        description: "Verbose state publishing"
+    }
+    tf_frames: {
+        type: bool,
+        default_value: false,
+        description: "Verbose TF publishing"
+    }
+  stiffness:
+    force:
+      x: {
+        type: double,
+        default_value: 300.0,
+        description: "Cartesian translation stiffness: x-axis",
+        validation: {
+          bounds: [0.0, 1500.0]
+        }
+      }
+      y: {
+        type: double,
+        default_value: 300.0,
+        description: "Cartesian translation stiffness: y-axis",
+        validation: {
+          bounds: [0.0, 1500.0]
+        }
+      }
+      z: {
+        type: double,
+        default_value: 300.0,
+        description: "Cartesian translation stiffness: z-axis",
+        validation: {
+          bounds: [0.0, 1500.0]
+        }
+      }
+    torque:
+      x: {
+        type: double,
+        default_value: 30.0,
+        description: "Cartesian rotation stiffness: x-axis",
+        validation: {
+          bounds: [0.0, 100.0]
+        }
+      }
+      y: {
+        type: double,
+        default_value: 30.0,
+        description: "Cartesian rotation stiffness: y-axis",
+        validation: {
+          bounds: [0.0, 100.0]
+        }
+      }
+      z: {
+        type: double,
+        default_value: 30.0,
+        description: "Cartesian rotation stiffness: z-axis",
+        validation: {
+          bounds: [0.0, 100.0]
+        }
+      }
+    nullspace: {
+      type: double,
+      default_value: 10.0,
+      description: "Nullspace stiffness",
+      validation: {
+          bounds: [0.0, 100.0]
+      }
+    }
+  damping:
+    force:
+      x: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian translation damping: x-axis",
+        validation: {
+          bounds: [0.01, 2.0]
+        }
+      }
+      y: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian translation damping: y-axis",
+        validation: {
+          bounds: [0.01, 2.0]
+        }
+      }
+      z: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian translation damping: z-axis",
+        validation: {
+          bounds: [0.01, 2.0]
+        }
+      }
+    torque:
+      x: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian rotation damping: x-axis",
+        validation: {
+          bounds: [0.01, 2.0]
+        }
+      }
+      y: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian rotation damping: y-axis",
+        validation: {
+          bounds: [0.01, 2.0]
+        }
+      }
+      z: {
+        type: double,
+        default_value: 1.0,
+        description: "Cartesian rotation damping: z-axis",
+        validation: {
+          bounds: [0.01, 2.0]
+        }
+      }
+    nullspace: {
+      type: double,
+      default_value: 0.1,
+      description: "Nullspace damping",
+      validation: {
+        bounds: [0.01, 2.0]
+      }
+    }
+
+  integral_control:
+    stiffness_coefficent: {
+      type: double,
+      default_value: 0.0,
+      description: "The gain of the integral component is calculated as a multiple of cartesian stiffness",
+      validation: {
+        bounds: [0.0, 100.0]
+      }
+    }
+    leak_rate: {
+      type: double,
+      default_value: 5.0,
+      description: "The rate at which the integral component reduces over time [cumulative_error += (-leak_rate * cumulative_error + current_error) * dt]",
+      validation: {
+        bounds: [0.0, 100.0]
+      }
+    }

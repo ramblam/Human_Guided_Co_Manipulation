@@ -1,0 +1,8 @@
+<library path="cartesian_impedance_controller_ros">
+  <class name="rcm_controllers/CartesianImpedanceControllerRos" type="rcm_controllers::CartesianImpedanceControllerRos" base_class_type="controller_interface::ControllerInterface">
+  <description>
+    The cartesian impedance controller executes trajectories in a compliant manner using joint effort interfaces.
+  </description>
+  </class>
+</library>
+                        
