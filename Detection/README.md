@@ -1,5 +1,5 @@
 # Wrist detection:
-Vision is used to provide wrist tracking functionality, enabling the robot to track and follow the user’s wrist as they handle the carbon fiber ply together. We used an Intel RealSense D435 camera (but any D400-series camera should work) and Ultralytics YOLO11n-pose model.
+Vision is used to provide wrist tracking functionality, enabling the robot to track and follow the user’s wrist as they handle the carbon fiber ply together. We used an Intel RealSense D435 camera (but any D400-series camera should work) and [Ultralytics YOLO11n-pose model](https://docs.ultralytics.com/models/yolo11/).
 
 ## How to run the wrist detection:
 The easiest option is to use the provided docker file:
