@@ -31,7 +31,8 @@ https://github.com/user-attachments/assets/faa31b21-2f30-4656-ba65-3437d1e00da8
 https://github.com/user-attachments/assets/327c3a32-a8e0-41aa-b5ae-9c595f7bf01d
 
 #### Hybrid approach:
-ADD THE VIDEO HERE (SLIGHTLY TOO BIG)
+
+https://github.com/user-attachments/assets/e757a3b6-acac-4e32-9049-137ce0a37f2e
 
 ### Case 2 (with obstacle):
 
@@ -53,7 +54,7 @@ https://github.com/user-attachments/assets/414e820e-7abf-4602-ba6f-6160bb374969
 
 #### Hybrid approach:
 
-ADD THE VIDEO HERE (SLIGHTLY TOO BIG)
+https://github.com/user-attachments/assets/b1ed2acd-2f69-43a1-a16f-7a5a0eea89b9
 
 ## Credits & Acknowledgements
 **Core research, analysis, experiments etc.:** Rami Ojanen [(@ramblam)](https://github.com/ramblam)
