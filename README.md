@@ -57,6 +57,7 @@ ADD THE VIDEO HERE (SLIGHTLY TOO BIG)
 
 ## Credits & Acknowledgements
 **Core research, analysis, experiments etc.:** Rami Ojanen [(@ramblam)](https://github.com/ramblam)
+
 **Thanks and credits for the ROS2 port of the Cartesian Impedance Controller and many control-related clients and functionalities**: Ossi Parikka [(@Ozzyuni)](https://github.com/ozzyuni)
 
 
