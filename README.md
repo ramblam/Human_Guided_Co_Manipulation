@@ -1,4 +1,4 @@
-# Human_Guided_Co_Manipulation
+# Human_Guided_Co_Manipulation (IN PROGRESS)
 This repository contains the codes utilized and example clips of the experiments performed for our paper Human-Guided Co-Manipultion of Carbon Fiber Plies. The implemetation consists of three main parts: control, (wrist) detection, and verbal communication (both speech recognition and TTS). The implementation of those can be found from the corresponding directories. To keep the main README manageable in size, more information and instructions on how to run those can be found within those subfolders.
 
 ## Experiments
