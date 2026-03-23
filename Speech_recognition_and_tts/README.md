@@ -13,7 +13,7 @@ cd voice_tts_ws
 source install/setup.bash
 cd
 cd /usr/share/creoir/python
-python3 collins_compliance_and_tracking_new.py
+python3 compliance_and_tracking_new.py
 ```
 
 Or one can replace that with other speech recognition tools and use the same action interface.
