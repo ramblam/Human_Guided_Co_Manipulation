@@ -3,6 +3,7 @@ Vision is used to provide wrist tracking functionality, enabling the robot to tr
 
 ## How to run the wrist detection:
 The easiest option is to use the provided docker file:
+
 **1. terminal:**
 ```
 xhost +local:docker
