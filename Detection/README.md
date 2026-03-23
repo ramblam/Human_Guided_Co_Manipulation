@@ -47,3 +47,7 @@ source install/setup.bash
 export PYTHONPATH=/opt/venv/lib/python3.12/site-packages:$PYTHONPATH	
 ros2 run pose_keypoint_detector yolo_pose_detector
 ```
+
+## Acknowledgement:
+
+For the pose detection interface, previous work from Noora Sassali ([@NMKsas](https://github.com/NMKsas)) was utilized as a base, modified for our use case and ported to Jazzy. See: https://github.com/NMKsas/gesture_pointer/tree/ros2_humble 
