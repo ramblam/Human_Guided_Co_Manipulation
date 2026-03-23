@@ -7,8 +7,8 @@
 ## Description
 This project is an implementation of Cartesian impedance control for robotic manipulators. It is a type of control strategy that sets a dynamic relationship between contact forces and the position of a robot arm, making it suitable for collaborative robots. It is particularily useful when the interesting dimensions in the workspace are in the Cartesian space.
 
-The controller has so far been and tested using the seven degree-of-freedom (DoF) robot arm `Franka Emika Research 3 (FR3)` in simulation.
-This controller is used and tested with ROS 2 `humble`.
+The controller has so far been and tested using the seven degree-of-freedom (DoF) robot arm `Franka Research 3 (FR3)`.
+This controller is used and tested with ROS 2 `jazzy`.
 
 The implementation consists of a
 1. base library that has few dependencies and can e.g. be directly integrated into software such as the DART simulator and a
