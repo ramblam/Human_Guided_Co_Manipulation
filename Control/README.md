@@ -1,7 +1,7 @@
 # Robot Control
 
 ## Prerequisites:
-You need to have ROS2 Jazzy, MoveIt2 (we used binary install) and Franka ROS2 (we used v3.2.0)
+You need to have ROS2 Jazzy, MoveIt2 (we used binary install), Franka ROS2 (we used v3.2.0) and the dependencies of the cartesian impedance controller installed.
 
 ## How to run the system
 ### The control side of things:
